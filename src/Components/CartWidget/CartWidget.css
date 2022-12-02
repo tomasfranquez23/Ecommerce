@@ -1,0 +1,11 @@
+.site-header-cart { color:#000; text-decoration:none; margin: 40px; ;}
+.site-header-cart-count { font-size:11px; display:inline-block; color:#fff; background-color:#000; border-radius:50%; text-align:center; width:16px; height:16px; line-height:14px; position:relative; right:10px; top: 6px; 
+}
+
+
+
+@media (max-width:990px){
+    .site-header-cart{
+        margin: 0;
+    }
+}
