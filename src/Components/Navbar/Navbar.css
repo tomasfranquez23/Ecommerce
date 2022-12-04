@@ -1,0 +1,159 @@
+
+
+nav{
+    margin: 20px 30px;
+}
+
+
+.ul-icons{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+ 
+}
+.icons{
+    text-decoration: none;
+}
+
+.ul-icons-mobile{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    display: none;
+
+ 
+}
+
+
+
+
+
+
+
+.navbar-nav{
+    
+    width: 100%;
+    justify-content: center;
+}
+
+.logo{
+    color:#c67007;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 2.1rem;
+}
+.logo:hover{
+    color: #c67007;
+}
+
+/* Links */
+.links {
+    margin:0 10px ;
+    text-decoration: none;
+    font-family: 'Amaranth', sans-serif;
+    color:rgb(248, 244, 244);
+    font-size:1.3rem;
+    letter-spacing: 2px; 
+    position: relative;
+    display: block;
+    color: #ffffff;
+    width: fit-content;
+    z-index: 0;
+    transition: all 450ms ease;
+}
+.links::after, .links::before {
+    content: '';
+        display: block;
+        position: absolute;
+        transition: width 540ms, opacity 300ms ease;
+}
+
+
+.links::before, .links::after {
+    height: 0.1em;
+    bottom: -1px;
+}
+.links::before {
+    width: 0;
+    background-color: #c67007;
+}
+.links::after {
+    width: 100%;
+    border: 1px solid #c67007;
+    border-top: 0;
+    opacity: 0;
+}
+.links:hover {
+    color: #c67007;
+}
+.links:hover::before {
+    width: 0;
+    animation: width 1500ms ease forwards;
+}
+.links:hover::after {
+    opacity: 1;
+}
+@keyframes width {
+    0% {
+        width: 0;
+   }
+    50% {
+        width: 100%;
+   }
+    100% {
+        width: 70%;
+   }
+}
+/* End links */
+
+
+
+span{
+    color: white;
+}
+@media (max-width: 991px) {
+    nav {
+      margin: 0;  
+    } 
+    .mobile-menu{
+        background-color: #353439;
+    }
+     
+
+
+}
+@media (max-width :530px) {
+    .container-fluid{
+        justify-content: space-around;
+        margin: 10px;
+        padding: 0;
+    }
+}
+@media (max-width :370px) {
+    .logo{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .ul-icons{
+       display: none;
+     
+    }
+    .ul-icons-mobile{
+        display: flex;
+    }
+  
+    
+}
+
+.offcanvas-title{
+    color: white;
+}
+
+.navbar-toggler-icon{
+    color: white;
+
+}
+

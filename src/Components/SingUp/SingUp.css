@@ -1,0 +1,36 @@
+.singUp{
+    background-color:#c67007;
+    border: 0;
+    border-radius: 100px;
+    color: #ffffff;
+    font-family:'Amaranth', sans-serif;;
+    font-size: 16px;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    padding: 0px 40px;
+    text-align: center;
+  }
+  
+  .singUp:hover,
+  .singUp:focus { 
+    background-color:#ac6208;
+    color: #ffffff;
+  }
+  .singUp-mobile{
+    display: none;
+
+  }
+  
+  @media (max-width :530px) {
+    .singUp{
+        display: none;
+    }
+    .singUp-mobile{
+      display: flex;
+      margin-top: 5px;
+    }
+    
+}

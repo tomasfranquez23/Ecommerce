@@ -1,14 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-/*  CartWidget CSS  */
-import './Components/CartWidget/CartWidget.css'
+import './Components/ItemListContainer/item.css'
+import './Components/Header/Header.css'
+import Header from './Components/Header/Header';
+
 
 function App() {
   return (
-      <><Navbar />
-      <ItemListContainer/></>
+    <div className='app'>
+      <Header />
+      <ItemListContainer />
+    </div>
   );
 }
 

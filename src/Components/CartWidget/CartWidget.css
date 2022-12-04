@@ -1,11 +1,19 @@
-.site-header-cart { color:#000; text-decoration:none; margin: 40px; ;}
-.site-header-cart-count { font-size:11px; display:inline-block; color:#fff; background-color:#000; border-radius:50%; text-align:center; width:16px; height:16px; line-height:14px; position:relative; right:10px; top: 6px; 
+
+.header-cart-count { font-size:11px; display:inline-block; color:#fff; background-color:#000; border-radius:50%; text-align:center; width:16px; height:15px; line-height:14px; position:relative; right:10px; top: 6px; 
 }
 
+.header-cart{
+    margin: 0 0 0 20px;
+}
 
-
-@media (max-width:990px){
-    .site-header-cart{
-        margin: 0;
+@media (min-width:700px)and (max-width:1000px) {
+    svg{
+        width: 26px;
+        height: 26px;
     }
+    .header-cart-count{
+        width:20px; height:20px;
+    }
+    ;
 }
+
